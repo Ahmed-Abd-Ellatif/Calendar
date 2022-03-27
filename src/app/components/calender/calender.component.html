@@ -1,0 +1,97 @@
+<div class="container my-5 allContent">
+  <div class="row">
+    <div class="photo">
+      <img src="assets/group358.png" alt="" />
+    </div>
+    <div class="col-lg-9">
+      <h2 class="mb-5 text-primary under">التقويم</h2>
+      <div class="item" *ngFor="let date of dates" [style]="date.bgc">
+        <span>{{ date.numOfDay }} {{ date.day }}</span
+        ><br />
+        <span>{{ date.action }} مهام</span>
+      </div>
+    </div>
+    <!-- =================================== -->
+    <div class="col-lg-3">
+      <h2 class="mb-5 text-primary">شهر مايو , 2021</h2>
+      <div class="All">
+        <div class="head">
+          <div>
+            <i class="fa-solid fa-angle-down m-2" style="cursor: pointer"></i>
+            <i class="fa-solid fa-angle-up m-2" style="cursor: pointer"></i>
+          </div>
+          <div>2021</div>
+        </div>
+        <div class="body">
+          <div class="con" *ngFor="let year of years">
+            <button [style]="year.style">{{ year.year }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======================================================== -->
+  <div class="check mt-5">
+    <div class="checkOne mb-3">
+      <div>
+        <label for="">من</label><br />
+        <input type="time" value="10:00" />
+      </div>
+
+      <div>
+        <label for="">الي</label><br />
+        <input type="time" value="12:00" />
+      </div>
+
+      <div>
+        <label for="">الجلسه</label><br />
+        <input type="text" placeholder="سيشن التصوير الفوتوغرافي" />
+      </div>
+
+      <div>
+        <label for="">عدد المقاعد</label><br />
+        <input type="number" />
+      </div>
+
+      <div>
+        <label for="">المستحدمين</label><br />
+        <button class="b">49</button>
+      </div>
+
+      <div>
+        <button class="btn-delete">
+          <i class="fa-solid fa-trash-can"></i>
+          حذف
+        </button>
+      </div>
+    </div>
+    <div class="checkTwo">
+      <div>
+        <input type="time" value="10:00" />
+      </div>
+
+      <div>
+        <input type="time" value="12:00" />
+      </div>
+
+      <div>
+        <input type="text" placeholder="سيشن التصوير الفوتوغرافي" />
+      </div>
+
+      <div>
+        <input type="number" />
+      </div>
+
+      <div>
+        <button class="b2">0</button>
+      </div>
+
+      <div class="btn-hidden btn-delete">
+        <button class="btn btn-outline-danger">
+          <i class="fa-solid fa-trash-can"></i>
+          حذف
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.navbar-brand,
+.nav-item,
+.nav-link,
+.navbar-nav,
+.dropdown-item {
+  color: #1766ff !important;
+}
+.navbar-brand {
+  color: #0a0094 !important;
+  font-weight: bold;
+  font-size: 22px;
+}
+.user-name {
+  font-weight: bold;
+  color: #0a0094 !important;
+}
+.red {
+  color: #f00 !important;
+}
